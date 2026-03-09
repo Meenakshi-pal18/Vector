@@ -1,0 +1,19 @@
+#include<iostream>
+#include<vector>
+#include<algorithm>
+using namespace std;
+int main(){
+   vector<int>v={10,20,5,8,30};
+   //v.sort(v.begin(),v.end());
+   int largest=v[0];
+   int second=v[1];
+   for(int i=0;i<v.size();i++){
+    //   int second=v[1];
+       if(v[i]>largest){
+           second=largest;
+           largest=v[i];
+       }
+   }
+   cout<<second;
+   
+}
